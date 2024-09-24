@@ -1,0 +1,65 @@
+/* product.css */
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 200ms, background-color 200ms;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev svg,
+.slick-next svg {
+  stroke: #000;
+  stroke-width: 2px; /* Thicker arrows */
+  width: 30px;
+  height: 30px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slick-prev:hover::before {
+  left: -10px;
+}
+
+.slick-next:hover::before {
+  right: -10px;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+
+.slick-arrow {
+  display: block !important;
+}

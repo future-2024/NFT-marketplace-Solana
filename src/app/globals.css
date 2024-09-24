@@ -1,0 +1,82 @@
+/* src/app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White background */
+    --foreground: 0 0% 0%; /* Black text */
+
+    --card: 0 0% 100%; /* White background for cards */
+    --card-foreground: 0 0% 0%; /* Black text */
+
+    --popover: 0 0% 100%; /* White background for popovers */
+    --popover-foreground: 0 0% 0%; /* Black text */
+
+    --primary: 0 0% 0%; /* Black background */
+    --primary-foreground: 0 0% 100%; /* White text */
+
+    --secondary: 0 0% 87%; /* Light gray background for secondary elements */
+    --secondary-foreground: 0 0% 0%; /* Black text */
+
+    --muted: 0 0% 87%; /* Light gray background for muted elements */
+    --muted-foreground: 0 0% 0%; /* Black text */
+
+    --accent: 0 0% 87%; /* Light gray background for accent elements */
+    --accent-foreground: 0 0% 0%; /* Black text */
+
+    --destructive: 0 100% 50%; /* Red background for destructive elements */
+    --destructive-foreground: 0 0% 100%; /* White text */
+
+    --border: 0 0% 87%; /* Light gray border */
+    --input: 0 0% 87%; /* Light gray input background */
+    --ring: 0 0% 0%; /* Black ring */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%; /* Dark gray background */
+    --foreground: #ffffff; /* White text */
+
+    --card: 0 0% 20%; /* Dark gray background for cards */
+    --card-foreground: #ffffff; /* White text */
+
+    --popover: 0 0% 20%; /* Dark gray background for popovers */
+    --popover-foreground: #ffffff; /* White text */
+
+    --primary: 0 0% 20%; /* Dark gray background for primary elements */
+    --primary-foreground: #ffffff; /* White text */
+
+    --secondary: 0 0% 20%; /* Dark gray background for secondary elements */
+    --secondary-foreground: #ffffff; /* White text */
+
+    --muted: 0 0% 20%; /* Dark gray background for muted elements */
+    --muted-foreground: #ffffff; /* White text */
+
+    --accent: 0 0% 20%; /* Dark gray background for accent elements */
+    --accent-foreground: #ffffff; /* White text */
+
+    --destructive: 0 100% 50%; /* Red background for destructive elements */
+    --destructive-foreground: #ffffff; /* White text */
+
+    --border: 0 0% 20%; /* Dark gray border */
+    --input: 0 0% 20%; /* Dark gray input background */
+    --ring: #ffffff; /* White ring */
+  }
+
+  .content-with-navbar-padding {
+    padding-top: 4rem; /* Adjust this value to match your navbar height */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-serif;
+  }
+}
