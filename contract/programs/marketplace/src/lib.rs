@@ -39,7 +39,7 @@ pub mod solana_nft_marketplace {
                 &seller.key(),
                 &[],
                 1,
-		0
+		        0
             )?;
 
         anchor_lang::solana_program::program::invoke(
